@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThermalMonitorAnalytics", "ThermalMonitorAnalytics\ThermalMonitorAnalytics.csproj", "{C541445B-9978-411D-8282-5506C5A2ECDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3B1B2918-CB93-4570-9133-2B2B6D02B0D2} = {3B1B2918-CB93-4570-9133-2B2B6D02B0D2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThermalMonitor", "ThermalMonitor\ThermalMonitor.csproj", "{3B1B2918-CB93-4570-9133-2B2B6D02B0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{6D749175-D239-4991-99DF-B9F6D32E27AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,14 @@ Global
 		{C541445B-9978-411D-8282-5506C5A2ECDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C541445B-9978-411D-8282-5506C5A2ECDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C541445B-9978-411D-8282-5506C5A2ECDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B1B2918-CB93-4570-9133-2B2B6D02B0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B1B2918-CB93-4570-9133-2B2B6D02B0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B1B2918-CB93-4570-9133-2B2B6D02B0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B1B2918-CB93-4570-9133-2B2B6D02B0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D749175-D239-4991-99DF-B9F6D32E27AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D749175-D239-4991-99DF-B9F6D32E27AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D749175-D239-4991-99DF-B9F6D32E27AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D749175-D239-4991-99DF-B9F6D32E27AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
