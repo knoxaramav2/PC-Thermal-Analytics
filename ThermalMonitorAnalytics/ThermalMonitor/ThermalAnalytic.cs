@@ -1,35 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+using Common;
 
 namespace ThermalMonitor
 {
     public partial class ThermalAnalytic : ServiceBase
     {
+        #region Fields
+        IRegistration _regis;
+
+        #endregion
+
         #region public methods
         public ThermalAnalytic()
         {
             InitializeComponent();
-            RegisterLogs();
+
+            _regis = new Registration();
+            _regis.RegisterLog(Strings.ReportLogSrc, Strings.ReportLogName);
             
         }
 
         #endregion
-
-        #region setup
-        private void RegisterLogs()
-        {
-            reportLog = new EventLog();
-        }
-
-        #endregion
-
 
         #region events
         protected override void OnStart(string[] args)

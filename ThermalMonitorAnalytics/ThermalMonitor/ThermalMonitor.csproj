@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Registration.cs" />
     <Compile Include="ThermalAnalytic.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -60,6 +61,12 @@
     <EmbeddedResource Include="ThermalAnalytic.resx">
       <DependentUpon>ThermalAnalytic.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{6d749175-d239-4991-99df-b9f6d32e27ae}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
